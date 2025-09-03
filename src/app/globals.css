@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #379ad3;
+  --foreground: #212529;
+  --background: #ffffff;
+}
+
+:root.dark {
+  --foreground: #dddddd;
+  --background: #212529;
+}
+
+html {
+  background-color: var(--primary);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--foreground);
+}
+
+body {
+  background-color: var(--background);
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  html {
+    font-size: 12px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: transparent;
+    font-weight: 400;
+  }
+
+  b,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+}
