@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
   trailingSlash: true,
+  basePath: "/sr_k/",
+  assetPrefix: "/sr_k/",
   images: {
     unoptimized: true,
   },
@@ -11,13 +13,13 @@ const nextConfig: NextConfig = {
       test: /\.svg$/,
       use: [
         {
-          loader: "@svgr/webpack"
-        }
-      ]
+          loader: "@svgr/webpack",
+        },
+      ],
     });
 
     return config;
-  }
+  },
 };
 
 export default nextConfig;
