@@ -9,13 +9,12 @@ import UnorderedList, {
   UnorderedListProps,
 } from "@/components/common/UnorderedList";
 
-import { dateDiff, displayPeriod } from "@/utils/date";
+import { displayPeriod } from "@/utils/date";
 import { mergeClassNames } from "@/utils/mergeClassNames";
 
 import RSS from "@/svgs/rss.svg";
 import Anchor from "../common/Anchor";
 import TechBadge from "./TechBadge";
-import Badge from "./Badge";
 
 interface PositionExpeirence {
   position: string;

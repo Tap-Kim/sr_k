@@ -1,5 +1,4 @@
 import type { EducationPayload } from "@/components/education/Education";
-import Anchor from "@/components/common/Anchor";
 
 const payload: EducationPayload[] = [
   {
