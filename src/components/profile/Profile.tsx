@@ -33,7 +33,7 @@ function Profile({ info }: ProfileProps) {
         last={
           <div className="h-[100%] flex flex-col justify-center gap-2">
             <h1 className="text-4xl mt-6 mb-6">{info.name}</h1>
-            <div className="flex flex-row gap-[0.75rem]">
+            <div className="flex flex-row gap-[0.75rem] max-sm:gap-[0.7rem]">
               {info.contacts.map(({ icon, link, text }, index) => (
                 <IconLink
                   className={`gap-1.5 ${index === 0 ? "mt-auto" : ""}`}
