@@ -4,7 +4,7 @@ const payload: SkillPayload[] = [
   {
     category: "Frontend",
     list: [
-      "React,  Next.js, Javascript, Typescript",
+      "Javascript, Typescript, React,  Next.js",
       "Recoil, Zustand, Tanstack-Query, Redux(+saga)",
       "Styled-components, Emotion, SCSS",
     ],
@@ -15,7 +15,7 @@ const payload: SkillPayload[] = [
   },
   {
     category: "Etc",
-    list: ["Radix, StoryBook, Truborepo, Expo(RN)"],
+    list: ["Radix, StoryBook, Turborepo, Expo(RN)"],
   },
 ];
 

@@ -1,7 +1,9 @@
 import Section from "@/components/common/Section";
 import Row from "@/components/common/Row";
+// import ProfileImg from "@/assets/images/Profile.png";
 
 import IconLink, { IconLinkProps } from "./IconLink";
+import Image from "next/image";
 
 export interface ProfilePayload {
   name: string;
@@ -18,6 +20,16 @@ function Profile({ info }: ProfileProps) {
     <Section>
       <Row
         className="max-sm:flex-col max-sm:items-center"
+        first={
+          <Image
+            className="max-w-[12rem]"
+            src={info.profileImage}
+            width={192}
+            height={192}
+            alt="Profile Image"
+            style={{ borderRadius: "50%" }}
+          />
+        }
         last={
           <div className="h-[100%] flex flex-col justify-center gap-2">
             <h1 className="text-4xl mt-6 mb-6">{info.name}</h1>

@@ -9,14 +9,14 @@ const payload: Metadata = {
     description: "",
     images: [
       {
-        url: "/images/Thumbnail.png",
+        url: "/images/Profile.png",
         width: 600,
         height: 300,
         alt: "Page preview image",
       },
     ],
     type: "profile",
-    firstName: "Yunji",
+    firstName: "Taehyeon",
     lastName: "Kim",
     gender: "male",
   },

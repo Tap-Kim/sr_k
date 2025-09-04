@@ -6,7 +6,7 @@ import RSS from "@/svgs/rss.svg";
 
 const payload: ProfilePayload = {
   name: "김태현",
-  profileImage: "",
+  profileImage: "/sr_k/images/Profile.png",
   contacts: [
     {
       icon: Github,
