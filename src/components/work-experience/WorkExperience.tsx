@@ -83,7 +83,7 @@ function WorkExperience({ careers }: WorkExperienceProps) {
                       <Fragment key={title}>
                         <Header4
                           className={mergeClassNames(
-                            "flex [&:nth-child(n+2)]:mt-8",
+                            "flex [&:nth-child(n+2)]:mt-8 max-md:text-[1.05rem]",
                             techStack === undefined ? "mb-2" : ""
                           )}
                         >
@@ -101,7 +101,7 @@ function WorkExperience({ careers }: WorkExperienceProps) {
                                 height={13}
                               />
                               <Anchor
-                                className="text-m"
+                                className="text-m max-sm:text-[1rem]"
                                 target="_blank"
                                 href={link}
                               >
