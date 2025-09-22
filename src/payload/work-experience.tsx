@@ -7,7 +7,7 @@ type Experience = DiscoveredArray<CareerPayload["experiences"]>;
 type PositionExpeirence = DiscoveredArray<Experience["experience"]>;
 
 const EST_ENGINEER_1: PositionExpeirence = {
-  title: "Perso Studio - AI 휴먼 영상 편집 개발",
+  title: "Perso Studio - AI 스튜디오 영상 편집 개발 및 파트 리드",
   text: "AI STUDIO",
   link: "https://perso.ai/",
   techStack: ["React", "Typescript", "Recoil", "styled-components"],
@@ -74,9 +74,9 @@ const EST_ENGINEER_2: PositionExpeirence = {
       "API 명세를 노션과 스웨거로 소통하며 발생하는 명세와 타입의 불일치 및 불필요한 소통 문제를 제시",
       "스웨거 기반 타입스크립트 생성 API 적용을 제안. 스웨거 스키마 정보로 소통하도록 백엔드 팀과 협의",
       "API 도입으로 명세서 및 API 타입의 신뢰성 확보하여 불필요한 휴먼 에러 감소",
-      // "",
-      // "",
-      // "",
+      "",
+      "",
+      "",
       // "",
     ],
     {
@@ -166,7 +166,8 @@ const EST_ENGINEER_5: PositionExpeirence = {
       "자기 주도하 사내 개발 문화 및 커뮤니티 활성화 활동 참여",
       "TIL, 기술/알고리즘 스터디 운영. 내부 기술 교류 및 공유 문화 조성",
       "사내 오거나이저 활동으로 사내 디자인 시스템 제안 및 백오피스 시스템 구축 발안 및 수행",
-      // "",
+      "",
+      "",
     ],
   ],
 };
@@ -191,7 +192,7 @@ const EST_PAYLOAD: CareerPayload = {
   //   "‘어떤 상상도 바로 그릴 수 있게’를 추구하며 3차원 스케치북 서비스 ‘Feather’를 개발하는 스타트업으로, 엔지니어로 합류해 서비스의 프론트엔드를 담당했습니다. 신규 기능을 구현하고 서비스의 사용자 경험을 개선해 나갔으며, 아키텍처 개선, 모듈화 등 DX를 고려한 작업을 진행했습니다. 또한, 팀의 목표를 이루기 위해 백엔드 개발을 진행하기도 했습니다. 팀의 협업 방식에 대한 개선이 필요하게 되어, 스크럼을 도입하고 스프린트를 진행하며 제품 개발에 대한 프로세스를 정리하였습니다.",
 
   description:
-    "Perso AI 휴먼/더빙/Portal 서비스와 알툴즈 서비스 웹 프론트엔드 구축 및 개발",
+    "Perso AI Studio/Dubbing/Portal 서비스와 알툴즈 서비스 웹 프론트엔드 구축 및 개발",
   experiences: [EST_EXPERIENCES],
 };
 
@@ -274,7 +275,7 @@ const DOUZNE_DEVELOPER_4: PositionExpeirence = {
       bold: true,
       value: "웹, 웹뷰, FTP 등 전반적인 웹 풀스택 개발을 진행",
     },
-    // ["", "", ""],
+    ["", "", "", "", ""],
   ],
 };
 
