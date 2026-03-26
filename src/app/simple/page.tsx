@@ -2,7 +2,6 @@ import Profile from "@/components/profile/Profile";
 import Introduce from "@/components/introduce/Introduce";
 import Skill from "@/components/skill/Skill";
 import WorkExperience from "@/components/work-experience/WorkExperience";
-import OtherExperience from "@/components/other-experience/OtherExperience";
 import Education from "@/components/education/Education";
 import Etc from "@/components/etc/Etc";
 
@@ -12,23 +11,31 @@ import {
   introducePayload,
   skillPayload,
   workExperiencePayload,
-  otherExperiencePayload,
   educationPayload,
   etcPayload,
-} from "@/payload/sr_k";
+} from "@/payload/sr_k/simple";
 
 export function generateMetadata() {
-  return metaPayload;
+  return {
+    ...metaPayload,
+    title: `${metaPayload.title} (Simple)`,
+  };
 }
 
-export default function Home() {
+/**
+ * 심플 이력서 버전 (/sr_k/simple)
+ *
+ * - other-experience 섹션 제외
+ * - payload는 @/payload/sr_k/simple 에서 관리
+ * - dev 환경에서는 /simple 경로로 접근
+ */
+export default function SimplePage() {
   return (
     <>
       <Profile info={profilePayload} />
       <Introduce introduces={introducePayload} />
       <Skill list={skillPayload} />
       <WorkExperience careers={workExperiencePayload} />
-      <OtherExperience experiences={otherExperiencePayload} />
       <Education educations={educationPayload} />
       <Etc etcs={etcPayload} />
     </>

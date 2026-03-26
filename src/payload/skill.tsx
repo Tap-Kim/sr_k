@@ -15,7 +15,7 @@ const payload: SkillPayload[] = [
   },
   {
     category: "Etc",
-    list: ["Radix, StoryBook, Turborepo, Expo(RN)"],
+    list: ["Radix, StoryBook, Turborepo, Expo(RN)", "WebRTC"],
   },
 ];
 
