@@ -9,7 +9,7 @@ import Etc from "@/components/etc/Etc";
 import {
   metaPayload,
   profilePayload,
-  introduceTossBankPayload,
+  introduceTossInvestPayload,
   skillPayload,
   workExperiencePayload,
   otherExperiencePayload,
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <Profile info={profilePayload} />
-      <Introduce introduces={introduceTossBankPayload} />
+      <Introduce introduces={introduceTossInvestPayload} />
       <WorkExperience careers={workExperiencePayload} />
       <Skill list={skillPayload} />
       <OtherExperience experiences={otherExperiencePayload} />
