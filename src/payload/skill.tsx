@@ -6,16 +6,16 @@ const payload: SkillPayload[] = [
     list: [
       "Javascript, Typescript, React,  Next.js",
       "Recoil, Zustand, Tanstack-Query, Redux(+saga)",
-      "Styled-components, Emotion, SCSS",
+      "Styled-components, Tailwind, SCSS",
     ],
   },
   {
     category: "Backend",
-    list: ["Java Spring, Node.js, PostgreSQL"],
+    list: ["Node.js, PostgreSQL, Java Spring"],
   },
   {
     category: "Etc",
-    list: ["Radix, StoryBook, Turborepo, Expo(RN)", "WebRTC"],
+    list: ["Radix, StoryBook, Turborepo, WebRTC", "Expo(RN), Jest"],
   },
 ];
 

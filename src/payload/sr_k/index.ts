@@ -8,6 +8,8 @@
 export { default as metaPayload } from "../meta";
 export { default as profilePayload } from "../profile";
 export { default as introducePayload } from "../introduce";
+export { default as introduceTossInvestPayload } from "./toss-invest/introduce-toss-invest";
+export { default as introduceTossBankPayload } from "./toss-bank/introduce-toss-bank";
 export { default as skillPayload } from "../skill";
 export { default as workExperiencePayload } from "../work-experience";
 export { default as otherExperiencePayload } from "../other-experience";
