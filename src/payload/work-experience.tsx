@@ -221,7 +221,7 @@ const EST_PAYLOAD: CareerPayload = {
   name: "이스트소프트",
   start: new Date("2022-04"),
   description:
-    "Perso AI Studio/Dubbing/Portal 서비스와 알툴즈 서비스 웹 프론트엔드 구축 및 개발",
+    "Perso AI 플랫폼 서비스와 알툴즈 서비스 웹 프론트엔드 구축 및 개발",
   experiences: [EST_EXPERIENCES],
 };
 
