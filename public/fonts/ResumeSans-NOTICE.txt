@@ -1,0 +1,4 @@
+Resume Sans is a PDF-export derivative of the bundled PretendardVariable.woff2.
+Static weights 400 and 600 were generated with fontTools and renamed to respect
+the upstream reserved font names. See Pretendard-LICENSE.txt for the SIL Open
+Font License and upstream copyright notices. The website font is unchanged.

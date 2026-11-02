@@ -214,6 +214,15 @@ const EST_EXPERIENCES: Experience = {
     EST_ENGINEER_3,
     EST_ENGINEER_4,
     EST_ENGINEER_5,
+
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
   ],
 };
 
@@ -322,6 +331,9 @@ const DOUZNE_EXPERIENCES_1: Experience = {
     DOUZNE_DEVELOPER_2,
     DOUZNE_DEVELOPER_3,
     DOUZNE_DEVELOPER_4,
+
+    { title: "", contents: [""] },
+    { title: "", contents: [""] },
   ],
 };
 

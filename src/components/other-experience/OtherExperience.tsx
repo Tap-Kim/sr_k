@@ -18,12 +18,11 @@ export interface OtherExperiencePayload {
 
 export interface OtherExperienceProps {
   experiences: OtherExperiencePayload[];
+  bulleted?: boolean;
 }
 
-function OtherExperience({ experiences }: OtherExperienceProps) {
-  return (
-    <Section title="Other Experience">
-      {experiences.map(({ title, link, start, end, descriptions }) => (
+function OtherExperience({ experiences, bulleted = false }: OtherExperienceProps) {
+  const entries = experiences.map(({ title, link, start, end, descriptions }) => (
         <Fragment key={title}>
           <Header4 className="mb-2">
             {link ? (
@@ -39,9 +38,19 @@ function OtherExperience({ experiences }: OtherExperienceProps) {
               {displayPeriod(start, end)} ({dateDiff(start, end ?? new Date())})
             </i>
           )}
-          <UnorderedList items={descriptions} />
+          {descriptions.length > 0 && <UnorderedList items={descriptions} />}
         </Fragment>
-      ))}
+      ));
+
+  return (
+    <Section title="Other Experience">
+      {bulleted ? (
+        <ul className="list-disc pl-7 space-y-2">
+          {entries.map((entry, index) => (
+            <li key={experiences[index].title}>{entry}</li>
+          ))}
+        </ul>
+      ) : entries}
     </Section>
   );
 }

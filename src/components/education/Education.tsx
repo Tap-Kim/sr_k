@@ -13,7 +13,7 @@ import { displayPeriod } from "@/utils/date";
 export interface EducationPayload {
   name: string;
   department?: string;
-  start: Date;
+  start?: Date;
   end?: Date;
   degree?: string;
   activities: Array<{
@@ -41,7 +41,7 @@ function Education({ educations }: EducationProps) {
                   {department && <Header4>{department}</Header4>}
                 </div>
                 <div className="text-gray-400 italic">
-                  <div>{displayPeriod(start, end)}</div>
+                  {start && <div>{displayPeriod(start, end)}</div>}
                   {degree && <div>{degree}</div>}
                 </div>
               </>
