@@ -19,9 +19,9 @@ const payload: CareerPayload[] = [
             techStack: ["TypeScript", "WebRTC", "Rollup", "Turborepo", "VitePress"],
             contents: [
               "타입 확인과 서버, 클라이언트 코드 구분이 어려운 파일 배포 방식을 개선하기 위해 npm 공개 전환 제안. TypeScript API와 배포 구조 설계 주도",
-              "SDK 수정마다 예제 저장소에 빌드 파일을 복사해야 해 SDK, 예제, SDK tester를 모노레포로 통합하고 수동 파일 교체 제거",
-              "아바타 렌더링과 버전별 API를 함께 확인할 환경이 없어 SDK 유지보수자와 사내 연동 개발자를 위한 SDK tester 앱 구축",
-              "SDK tester에서 기능을 확인하고 같은 SDK 소스로 테스트, PoC 환경을 구성해 변경 검증과 시연에 활용. SDK 개발과 연동 검증을 분리된 저장소에서 진행하던 불편 개선",
+              "SDK 수정마다 예제 저장소에 빌드 파일을 복사해야 해 SDK, 예제, SDK Playground를 모노레포로 통합하고 수동 파일 교체 제거",
+              "아바타 렌더링과 버전별 API를 함께 확인할 환경이 없어 SDK 유지보수자와 사내 연동 개발자를 위한 SDK Playground 앱 구축",
+              "SDK Playground에서 기능을 확인하고 같은 SDK 소스로 테스트, PoC 환경을 구성해 변경 검증과 시연에 활용. SDK 개발과 연동 검증을 분리된 저장소에서 진행하던 불편 개선",
               "외부 개발자에게는 Next.js, Svelte, Vanilla JS 예제와 버전별 API 문서를 제공해 패키지 설치부터 환경별 연동과 검증까지 지원",
             ],
           },
