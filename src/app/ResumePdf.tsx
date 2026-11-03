@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
   muted: { color: "#68727c", fontSize: 9, marginBottom: 5 },
   project: { fontSize: 11, fontWeight: 600, marginTop: 12, marginBottom: 4 },
   category: { fontSize: 10, fontWeight: 600, marginTop: 5, marginBottom: 3 },
-  bullet: { marginBottom: 5, paddingLeft: 9 },
+  bullet: { flexDirection: "row", marginBottom: 5 },
+  bulletMarker: { width: 9, flexShrink: 0 },
+  bulletText: { flex: 1 },
   bold: { fontWeight: 600 },
 });
 
@@ -44,15 +46,16 @@ function bulletList(items: unknown[], depth = 0): ReactNode {
     const value = isBold ? item.value as ReactNode : item as ReactNode;
     if (!value) return null;
     return (
-      <Text key={index} wrap={false} style={[styles.bullet, isBold ? styles.bold : {}]}>
-        {depth > 0 ? "- " : ""}{inlineContent(value)}
-      </Text>
+      <View key={index} wrap={false} style={styles.bullet}>
+        <Text style={styles.bulletMarker}>-</Text>
+        <Text style={[styles.bulletText, isBold ? styles.bold : {}]}>{inlineContent(value)}</Text>
+      </View>
     );
   });
 }
 
 function SectionTitle({ children }: { children: string }) {
-  return <Text style={styles.section} minPresenceAhead={children === "Work Experience" ? 200 : 65}>{children}</Text>;
+  return <Text style={styles.section} minPresenceAhead={children === "Work Experience" ? 300 : 65}>{children}</Text>;
 }
 
 function ResumeDocument() {
